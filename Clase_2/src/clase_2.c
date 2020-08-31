@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
-int main()
-{
+int main(){
     //inicia declaracion de variables
     float edad = 0;
     float dia = 24;
