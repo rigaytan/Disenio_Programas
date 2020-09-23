@@ -14,24 +14,34 @@ int main()
     multiplo4 = anio%4;
     multiplo100 = anio%100;
     multiplo400 = anio%400;
-    if (multiplo4 == 0)
+    //!= Diferente a
+    //100 200 300 400 500 600 700 800 900 1000 1100 ... 
+    if (multiplo4 == 0 && multiplo100 !=0)
     {
         dato = 1;
+    }
+    else if (anio == 0)
+    {
+        dato = 3;
     }
     else if (multiplo100 == 0 && multiplo400 == 0)
     {
         dato = 2;
     }
-   
+
     switch(dato)
     {
     case 1:
     printf("El año %i es biciesto",anio);
     break;
-    
+
     case 2:
     printf("El año %i es biciesto multiplo de 400,",anio);
     break;
+
+    case 3: 
+    printf("El año cero no es biciesto");
+    break; 
 
     default:
     printf("El año no es biciesto");
